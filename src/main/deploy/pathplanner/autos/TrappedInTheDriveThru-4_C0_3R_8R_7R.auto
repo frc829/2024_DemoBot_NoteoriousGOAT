@@ -1,0 +1,79 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.76,
+      "y": 4.49
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerBotStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TrappedInTheDriveThru-4_C0_3R_8R_7R-1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TrappedInTheDriveThru-4_C0_3R_8R_7R-2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TrappedInTheDriveThru-4_C0_3R_8R_7R-3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TrappedInTheDriveThru-4_C0_3R_8R_7R-4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TrappedInTheDriveThru-4_C0_3R_8R_7R-5"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

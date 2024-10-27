@@ -1,0 +1,103 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.24,
+      "y": 5.53
+    },
+    "rotation": 0.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerMidStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BabyShark-4-B0_2B_1B_4B-1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BabyShark-4-B0_2B_1B_4B-2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BabyShark-4-B0_2B_1B_4B-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BabyShark-4-B0_2B_1B_4B-4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BabyShark-4-B0_2B_1B_4B-5"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BabyShark-4-B0_2B_1B_4B-6"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.58,
+        "y": 4.3
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 0.15451335745976336,
+        "y": 3.765517730465661
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.82465020460515,
+        "y": 1.1876559193298974
+      },
+      "prevControl": {
+        "x": 4.6786230692460355,
+        "y": 1.2578208459845361
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0.25,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Pickup"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.25,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 180.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0.0,
+    "rotation": 8.746162262555277,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "DareToBeStupid_Sequel-4-B0_2R_3R_8R",
+  "previewStartingState": {
+    "rotation": -29.05000000000001,
+    "velocity": 0.0
+  },
+  "useDefaultConstraints": true
+}

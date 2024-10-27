@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.26,
+        "y": 0.78
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.631554120251098,
+        "y": 0.4251242788199864
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.036830073660148,
+        "y": 3.2983780253274797
+      },
+      "prevControl": {
+        "x": 3.8395863518589386,
+        "y": 2.5142904977844784
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Pickup"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.25,
+    "maxAcceleration": 5.0,
+    "maxAngularVelocity": 180.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -37.271033942179024,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "EleanorRigby_Sequel-5-C0_3R_8R_7R_6R",
+  "previewStartingState": {
+    "rotation": 0.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

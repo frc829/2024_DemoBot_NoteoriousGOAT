@@ -1,0 +1,91 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.24,
+      "y": 5.53
+    },
+    "rotation": 0.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerMidStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "DareToBeStupid-4-B0_2R_3R_8R-1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "DareToBeStupid-4-B0_2R_3R_8R-2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "DareToBeStupid-4-B0_2R_3R_8R-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "DareToBeStupid-4-B0_2R_3R_8R-4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

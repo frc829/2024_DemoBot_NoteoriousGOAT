@@ -1,0 +1,55 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.62,
+      "y": 4.36
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerBotStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BananaSplit-2-C0_8C-1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BananaSplit-2-C0_8C-2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

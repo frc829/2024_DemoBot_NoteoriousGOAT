@@ -1,0 +1,2404 @@
+<dashboard-tab
+    tab-name="TeleOperated"
+    slot="tab"
+    source-provider="NetworkTables"
+></dashboard-tab><dashboard-tab
+    slot="tab"
+    tab-name="Autonomous"
+    source-provider="NetworkTables"
+><frc-sendable-chooser
+        source-provider="NetworkTables"
+        style="transform: translate(26.8px, 19.2px);"
+        source-key="/SmartDashboard/Auto Chooser"
+        options="[]"
+    ></frc-sendable-chooser></dashboard-tab><dashboard-tab
+    tab-name="Subsystems"
+    slot="tab"
+    source-provider="NetworkTables"
+><frc-robot-subsystem
+        source-provider="NetworkTables"
+        source-key="/SmartDashboard/Outer Intake"
+        style="transform: translate(0px, 0px);"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(192.667px, 9.99e-05px);"
+        source-key="/SmartDashboard/Inner Intake"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(386px, 0px);"
+        source-key="/SmartDashboard/Transport"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(584px, 0px);"
+        source-key="/SmartDashboard/Singulator"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 128px); width: 217.562px; height: 70px;"
+        source-key="/SmartDashboard/Top Shooter"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(247.333px, 132px);"
+        source-key="/SmartDashboard/Bottom Shooter"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(460px, 133.333px); width: 198.74px; height: 76px;"
+        source-key="/SmartDashboard/Shooter Tilt"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(202.667px, 246px);"
+        source-key="/SmartDashboard/Elevator"
+    ></frc-robot-subsystem><frc-robot-subsystem
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 248px);"
+        source-key="/SmartDashboard/Drive"
+    ></frc-robot-subsystem></dashboard-tab><dashboard-tab
+    tab-name="Subsystem Data"
+    slot="tab"
+    source-provider="NetworkTables"
+    selected=""
+><vaadin-number-field
+        label="Top Shooter Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 0px); width: 208.667px; height: 67px;"
+        source-key="/SmartDashboard/Top Shooter/Voltage"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-2"
+            aria-labelledby="label-vaadin-number-field-690"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-690"
+            for="vaadin-number-field-2"
+        >Top Shooter Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-480"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Bottom Shooter Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 74.6667px); width: 206px; height: 63.6667px;"
+        source-key="/SmartDashboard/Bottom Shooter/Voltage"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-3"
+            aria-labelledby="label-vaadin-number-field-730"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-730"
+            for="vaadin-number-field-3"
+        >Bottom Shooter Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-508"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Outer Intake Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 148.667px); width: 207.323px; height: 64.3333px;"
+        source-key="/SmartDashboard/Outer Intake/Voltage"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-4"
+            aria-labelledby="label-vaadin-number-field-768"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-768"
+            for="vaadin-number-field-4"
+        >Outer Intake Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-534"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Inner Intake Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 224px); width: 207.333px; height: 77px;"
+        source-key="/SmartDashboard/Inner Intake/Voltage"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-5"
+            aria-labelledby="label-vaadin-number-field-817"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-817"
+            for="vaadin-number-field-5"
+        >Inner Intake Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-567"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Singulator Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 298px); width: 205.333px; height: 77px;"
+        source-key="/SmartDashboard/Singulator/Voltage"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-6"
+            aria-labelledby="label-vaadin-number-field-831"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-831"
+            for="vaadin-number-field-6"
+        >Singulator Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-577"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Top Shooter Velocity (%)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(210.656px, 0px); width: 224px; height: 65.6667px;"
+        source-key="/SmartDashboard/Top Shooter/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-7"
+            aria-labelledby="label-vaadin-number-field-845"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-845"
+            for="vaadin-number-field-7"
+        >Top Shooter Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-587"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Bottom Shooter Velocity (%)"
+        value="0"
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(207.312px, 74.6562px); width: 226.667px; height: 63.6458px;"
+        has-value=""
+        source-key="/SmartDashboard/Bottom Shooter/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-8"
+            aria-labelledby="label-vaadin-number-field-883"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-883"
+            for="vaadin-number-field-8"
+        >Bottom Shooter Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-613"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Outer Intake Velocity (%)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(210px, 147.323px); width: 223.333px; height: 88.9792px;"
+        source-key="/SmartDashboard/Outer Intake/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-9"
+            aria-labelledby="label-vaadin-number-field-923"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-923"
+            for="vaadin-number-field-9"
+        >Outer Intake Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-641"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Inner Intake Velocity (%)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(209.333px, 224px); width: 224.667px; height: 76.9896px;"
+        source-key="/SmartDashboard/Inner Intake/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-10"
+            aria-labelledby="label-vaadin-number-field-976"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-976"
+            for="vaadin-number-field-10"
+        >Inner Intake Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-678"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Singulator Velocity (%)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(206.656px, 297.99px); width: 227.333px; height: 93px;"
+        source-key="/SmartDashboard/Singulator/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-11"
+            aria-labelledby="label-vaadin-number-field-1003"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1003"
+            for="vaadin-number-field-11"
+        >Singulator Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-697"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Transport Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 372.667px); width: 206.667px; height: 77px;"
+        source-key="/SmartDashboard/Transport/Voltage"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-12"
+            aria-labelledby="label-vaadin-number-field-1030"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1030"
+            for="vaadin-number-field-12"
+        >Transport Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-716"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Transport Velocity (%)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(207.323px, 372.667px); width: 226px; height: 77px;"
+        source-key="/SmartDashboard/Transport/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-13"
+            aria-labelledby="label-vaadin-number-field-1044"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1044"
+            for="vaadin-number-field-13"
+        >Transport Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-726"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Elevator Voltage (V)"
+        value="0"
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 447.333px); width: 150px; height: 117px;"
+        source-key="/SmartDashboard/Elevator/Voltage"
+        has-value=""
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-14"
+            aria-labelledby="label-vaadin-number-field-1058"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1058"
+            for="vaadin-number-field-14"
+        >Elevator Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-736"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Elevator Position (m)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(151.333px, 447.989px); width: 149.99px; height: 97px;"
+        source-key="/SmartDashboard/Elevator/Position"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-15"
+            aria-labelledby="label-vaadin-number-field-1072"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1072"
+            for="vaadin-number-field-15"
+        >Elevator Position (m)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-746"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Elevator Velocity (%)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(303.333px, 448.646px); width: 152.667px; height: 97px;"
+        source-key="/SmartDashboard/Elevator/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-16"
+            aria-labelledby="label-vaadin-number-field-2765"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-2765"
+            for="vaadin-number-field-16"
+        >Elevator Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1871"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Tilt Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 527.333px);"
+        source-key="/SmartDashboard/Shooter Tilt/Voltage"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-17"
+            aria-labelledby="label-vaadin-number-field-3081"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-3081"
+            for="vaadin-number-field-17"
+        >Tilt Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-2087"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Tilt Position (deg)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(129.333px, 526.667px);"
+        source-key="/SmartDashboard/Shooter Tilt/Angle"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-18"
+            aria-labelledby="label-vaadin-number-field-3095"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-3095"
+            for="vaadin-number-field-18"
+        >Tilt Position (deg)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-2097"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Tilt Position Absolute (deg)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(259.333px, 527.323px); width: 199.333px; height: 97px;"
+        source-key="/SmartDashboard/Shooter Tilt/Absolute Angle"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-19"
+            aria-labelledby="label-vaadin-number-field-3109"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-3109"
+            for="vaadin-number-field-19"
+        >Tilt Position Absolute (deg)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-2107"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Tilt Velocity (%)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(461.334px, 526.666px);"
+        source-key="/SmartDashboard/Shooter Tilt/Velocity"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-20"
+            aria-labelledby="label-vaadin-number-field-3136"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-3136"
+            for="vaadin-number-field-20"
+        >Tilt Velocity (%)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-2126"
+            hidden=""
+        ></div>
+    </vaadin-number-field><frc-boolean-box
+        source-provider="NetworkTables"
+        style="transform: translate(22.6663px, 612.667px);"
+        source-key="/SmartDashboard/NoteLoaded/Has Note"
+        label="Has Note"
+    ></frc-boolean-box></dashboard-tab><dashboard-tab
+    tab-name="Drive and Telemetry"
+    slot="tab"
+    source-provider="NetworkTables"
+    source-key="/SmartDashboard/Telemetry/Pose Estimate"
+><vaadin-number-field
+        label="Max Velocity (mps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 0px);"
+        source-key="/SmartDashboard/Drive/Max Linear Velocity (mps)"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-21"
+            aria-labelledby="label-vaadin-number-field-61"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-61"
+            for="vaadin-number-field-21"
+        >Max Velocity (mps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-61"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Field Rotation (dps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(649.6px, 296.8px);"
+        source-key="/SmartDashboard/Telemetry/Field Rotational Velocity (dps)"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-22"
+            aria-labelledby="label-vaadin-number-field-77"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-77"
+            for="vaadin-number-field-22"
+        >Field Rotation (dps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-73"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Field Strafe (mps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(519.2px, 298.4px);"
+        source-key="/SmartDashboard/Telemetry/Field Strafe Velocity (mps)"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-23"
+            aria-labelledby="label-vaadin-number-field-78"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-78"
+            for="vaadin-number-field-23"
+        >Field Strafe (mps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-74"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Pose Estimate X"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0.799951px, 374.4px); width: 128px; height: 61.8px;"
+        source-key="/SmartDashboard/Telemetry/Pose Estimate X"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-24"
+            aria-labelledby="label-vaadin-number-field-79"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-79"
+            for="vaadin-number-field-24"
+        >Pose Estimate X</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-75"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Field Forward (mps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(388px, 298.4px);"
+        source-key="/SmartDashboard/Telemetry/Field Forward Velocity (mps)"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-25"
+            aria-labelledby="label-vaadin-number-field-80"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-80"
+            for="vaadin-number-field-25"
+        >Field Forward (mps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-76"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Linear Acceleration Mag"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(129.6px, 296.8px);"
+        source-key="/SmartDashboard/Telemetry/Linear Acceleration Mag"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-26"
+            aria-labelledby="label-vaadin-number-field-81"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-81"
+            for="vaadin-number-field-26"
+        >Linear Acceleration Mag</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-77"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Ang Acceleration Mag"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="width: 127.987px; height: 65.8px; transform: translate(259.2px, 297.6px);"
+        source-key="/SmartDashboard/Telemetry/Angular Acceleration Mag"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-27"
+            aria-labelledby="label-vaadin-number-field-82"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-82"
+            for="vaadin-number-field-27"
+        >Ang Acceleration Mag</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-78"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [3] Angle (deg)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(516px, 222.4px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor [3] Degrees"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-28"
+            aria-labelledby="label-vaadin-number-field-83"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-83"
+            for="vaadin-number-field-28"
+        >Angle Sensor [3] Angle (deg)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-79"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [3] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(386.4px, 222.4px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor Voltage [3]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-29"
+            aria-labelledby="label-vaadin-number-field-84"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-84"
+            for="vaadin-number-field-29"
+        >Angle Sensor [3] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-80"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Wheel [3] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(259.2px, 224px);"
+        source-key="/SmartDashboard/Drive/Wheel Voltage [3]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-30"
+            aria-labelledby="label-vaadin-number-field-85"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-85"
+            for="vaadin-number-field-30"
+        >Wheel [3] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-81"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Steer [3] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(130.4px, 223.2px);"
+        source-key="/SmartDashboard/Drive/Steer Voltage [3]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-31"
+            aria-labelledby="label-vaadin-number-field-86"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-86"
+            for="vaadin-number-field-31"
+        >Steer [3] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-82"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [2] Angle (deg)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(514.4px, 144px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor [2] Degrees"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-32"
+            aria-labelledby="label-vaadin-number-field-87"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-87"
+            for="vaadin-number-field-32"
+        >Angle Sensor [2] Angle (deg)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-83"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [2] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(385.6px, 146.4px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor Voltage [2]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-33"
+            aria-labelledby="label-vaadin-number-field-88"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-88"
+            for="vaadin-number-field-33"
+        >Angle Sensor [2] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-84"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Wheel [2] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(256px, 148px);"
+        source-key="/SmartDashboard/Drive/Wheel Voltage [2]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-34"
+            aria-labelledby="label-vaadin-number-field-89"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-89"
+            for="vaadin-number-field-34"
+        >Wheel [2] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-85"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Steer [2] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(128.8px, 148.8px);"
+        source-key="/SmartDashboard/Drive/Steer Voltage [2]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-35"
+            aria-labelledby="label-vaadin-number-field-90"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-90"
+            for="vaadin-number-field-35"
+        >Steer [2] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-86"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [1] Angle (deg)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="width: 128px; height: 77px; transform: translate(515.2px, 72.8px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor [1] Degrees"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-36"
+            aria-labelledby="label-vaadin-number-field-91"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-91"
+            for="vaadin-number-field-36"
+        >Angle Sensor [1] Angle (deg)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-87"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [1] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(386.4px, 72.8px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor Voltage [1]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-37"
+            aria-labelledby="label-vaadin-number-field-92"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-92"
+            for="vaadin-number-field-37"
+        >Angle Sensor [1] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-88"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Wheel [1] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(257.6px, 72.8px);"
+        source-key="/SmartDashboard/Drive/Wheel Voltage [1]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-38"
+            aria-labelledby="label-vaadin-number-field-93"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-93"
+            for="vaadin-number-field-38"
+        >Wheel [1] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-89"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Steer [1] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(128.8px, 72.8px);"
+        source-key="/SmartDashboard/Drive/Steer Voltage [1]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-39"
+            aria-labelledby="label-vaadin-number-field-94"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-94"
+            for="vaadin-number-field-39"
+        >Steer [1] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-90"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Robot Rot Velocity (dps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 296.8px);"
+        source-key="/SmartDashboard/Drive/Robot Rotational Velocity (dps)"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-40"
+            aria-labelledby="label-vaadin-number-field-95"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-95"
+            for="vaadin-number-field-40"
+        >Robot Rot Velocity (dps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-91"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Robot Strafe (mps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 223.2px);"
+        source-key="/SmartDashboard/Drive/Robot Strafe Velocity (mps)"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-41"
+            aria-labelledby="label-vaadin-number-field-96"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-96"
+            for="vaadin-number-field-41"
+        >Robot Strafe (mps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-92"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Robot Forward (mps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 148.8px);"
+        source-key="/SmartDashboard/Drive/Robot Forward Velocity (mps)"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-42"
+            aria-labelledby="label-vaadin-number-field-97"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-97"
+            for="vaadin-number-field-42"
+        >Robot Forward (mps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-93"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Max Angular Velocity (radps)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 74.4px);"
+        source-key="/SmartDashboard/Drive/Max Angular Velocity (mps)"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-43"
+            aria-labelledby="label-vaadin-number-field-98"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-98"
+            for="vaadin-number-field-43"
+        >Max Angular Velocity (radps)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-94"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [0] Angle (deg)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(516px, 0px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor [0] Degrees"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-44"
+            aria-labelledby="label-vaadin-number-field-99"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-99"
+            for="vaadin-number-field-44"
+        >Angle Sensor [0] Angle (deg)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-95"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Angle Sensor [0] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(387.2px, 0px);"
+        source-key="/SmartDashboard/Drive/Angle Sensor Voltage [0]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-45"
+            aria-labelledby="label-vaadin-number-field-100"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-100"
+            for="vaadin-number-field-45"
+        >Angle Sensor [0] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-96"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Wheel [0] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(257.6px, 0px);"
+        source-key="/SmartDashboard/Drive/Wheel Voltage [0]"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-46"
+            aria-labelledby="label-vaadin-number-field-101"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-101"
+            for="vaadin-number-field-46"
+        >Wheel [0] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-97"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Steer [0] Voltage (V)"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(128.8px, 0px);"
+        source-key="/SmartDashboard/Drive/Steer Voltage [0]"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-47"
+            aria-labelledby="label-vaadin-number-field-102"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-102"
+            for="vaadin-number-field-47"
+        >Steer [0] Voltage (V)</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-98"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Pose Estimate Y"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(131.2px, 375.2px);"
+        source-key="/SmartDashboard/Telemetry/Pose Estimate Y"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-48"
+            aria-labelledby="label-vaadin-number-field-1654"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1654"
+            for="vaadin-number-field-48"
+        >Pose Estimate Y</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1175"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Pose Estimate Theta"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(261.6px, 373.6px);"
+        source-key="/SmartDashboard/Telemetry/Pose Estimate Theta"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-49"
+            aria-labelledby="label-vaadin-number-field-1668"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1668"
+            for="vaadin-number-field-49"
+        >Pose Estimate Theta</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1185"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="LL Front X"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="width: 128px; height: 76.2px; transform: translate(390.4px, 372px);"
+        source-key="/SmartDashboard/Telemetry/Field X from limelightFront"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-50"
+            aria-labelledby="label-vaadin-number-field-1782"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1782"
+            for="vaadin-number-field-50"
+        >LL Front X</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1259"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="LL Front Y"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(519.2px, 372px);"
+        source-key="/SmartDashboard/Telemetry/Field Y from limelightFront"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-51"
+            aria-labelledby="label-vaadin-number-field-1796"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1796"
+            for="vaadin-number-field-51"
+        >LL Front Y</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1269"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="LL Front Theta"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(649.6px, 372px);"
+        source-key="/SmartDashboard/Telemetry/Field Theta from limelightFront"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-52"
+            aria-labelledby="label-vaadin-number-field-1810"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1810"
+            for="vaadin-number-field-52"
+        >LL Front Theta</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1279"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="LL Rear X"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 451.2px);"
+        source-key="/SmartDashboard/Telemetry/Field X from limelightRear"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-53"
+            aria-labelledby="label-vaadin-number-field-1824"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1824"
+            for="vaadin-number-field-53"
+        >LL Rear X</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1289"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="LL Rear Y"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(128.8px, 452px);"
+        source-key="/SmartDashboard/Telemetry/Field Y from limelightRear"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-54"
+            aria-labelledby="label-vaadin-number-field-1838"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1838"
+            for="vaadin-number-field-54"
+        >LL Rear Y</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1299"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="LL Rear Theta"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(258.4px, 452px);"
+        source-key="/SmartDashboard/Telemetry/Field Theta from limelightRear"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-55"
+            aria-labelledby="label-vaadin-number-field-1852"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1852"
+            for="vaadin-number-field-55"
+        >LL Rear Theta</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1309"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Note X"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(388.8px, 452.8px);"
+        source-key="/SmartDashboard/Telemetry/Object X from limelightFront"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-56"
+            aria-labelledby="label-vaadin-number-field-1866"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1866"
+            for="vaadin-number-field-56"
+        >Note X</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1319"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Note Y"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(519.2px, 451.2px);"
+        source-key="/SmartDashboard/Telemetry/Object Y from limelightFront"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-57"
+            aria-labelledby="label-vaadin-number-field-1880"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1880"
+            for="vaadin-number-field-57"
+        >Note Y</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1329"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Note Theta"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(648.8px, 451.2px);"
+        source-key="/SmartDashboard/Telemetry/Object Theta from limelightFront"
+        min="NaN"
+        max="NaN"
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-58"
+            aria-labelledby="label-vaadin-number-field-1894"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1894"
+            for="vaadin-number-field-58"
+        >Note Theta</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-1339"
+            hidden=""
+        ></div>
+    </vaadin-number-field></dashboard-tab><dashboard-tab
+    tab-name="Tuning"
+    slot="tab"
+    source-provider="NetworkTables"
+><vaadin-number-field
+        label="BB Transport"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        source-key="/SmartDashboard/PickupCommands/Baby Bird Transport Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-59"
+            aria-labelledby="label-vaadin-number-field-48"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-48"
+            for="vaadin-number-field-59"
+        >BB Transport</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-48"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="BB Singulator"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 75.3333px);"
+        source-key="/SmartDashboard/PickupCommands/Baby Bird Singulator Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-60"
+            aria-labelledby="label-vaadin-number-field-64"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-64"
+            for="vaadin-number-field-60"
+        >BB Singulator</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-60"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="BB Shooter"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 150px);"
+        source-key="/SmartDashboard/PickupCommands/Baby Bird Shooter Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-61"
+            aria-labelledby="label-vaadin-number-field-78"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-78"
+            for="vaadin-number-field-61"
+        >BB Shooter</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-70"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="BB Elevator"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 224px);"
+        source-key="/SmartDashboard/PickupCommands/Baby Bird Elevator Position"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-62"
+            aria-labelledby="label-vaadin-number-field-92"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-92"
+            for="vaadin-number-field-62"
+        >BB Elevator</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-80"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="BB Angle"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 296.667px);"
+        source-key="/SmartDashboard/PickupCommands/Baby Bird Tilt Angle"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-63"
+            aria-labelledby="label-vaadin-number-field-106"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-106"
+            for="vaadin-number-field-63"
+        >BB Angle</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-90"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Ground Transport"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 370.667px);"
+        source-key="/SmartDashboard/PickupCommands/Ground Transport Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-64"
+            aria-labelledby="label-vaadin-number-field-120"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-120"
+            for="vaadin-number-field-64"
+        >Ground Transport</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-100"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Amp Transport"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(128.667px, 0px);"
+        source-key="/SmartDashboard/Scoring Commands/Amp Transport Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-65"
+            aria-labelledby="label-vaadin-number-field-134"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-134"
+            for="vaadin-number-field-65"
+        >Amp Transport</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-110"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Amp Singulator"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(129.334px, 74.6667px);"
+        source-key="/SmartDashboard/Scoring Commands/Amp Singulator Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-66"
+            aria-labelledby="label-vaadin-number-field-148"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-148"
+            for="vaadin-number-field-66"
+        >Amp Singulator</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-120"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Amp Shooter"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(130px, 152px);"
+        source-key="/SmartDashboard/Scoring Commands/Amp Shooter Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-67"
+            aria-labelledby="label-vaadin-number-field-188"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-188"
+            for="vaadin-number-field-67"
+        >Amp Shooter</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-148"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Amp Elevator"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(130.667px, 224px);"
+        source-key="/SmartDashboard/Scoring Commands/Amp Elevator Position"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-68"
+            aria-labelledby="label-vaadin-number-field-228"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-228"
+            for="vaadin-number-field-68"
+        >Amp Elevator</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-176"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Amp Angle"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(130px, 297.333px);"
+        source-key="/SmartDashboard/Scoring Commands/Amp Tilt Angle"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-69"
+            aria-labelledby="label-vaadin-number-field-242"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-242"
+            for="vaadin-number-field-69"
+        >Amp Angle</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-186"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Ground Outer"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0.0003129px, 518.667px);"
+        source-key="/SmartDashboard/PickupCommands/Ground Outer Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-70"
+            aria-labelledby="label-vaadin-number-field-256"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-256"
+            for="vaadin-number-field-70"
+        >Ground Outer</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-196"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Fender Transport"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(258.667px, 0px);"
+        source-key="/SmartDashboard/Scoring Commands/Fender Transport Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-71"
+            aria-labelledby="label-vaadin-number-field-299"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-299"
+            for="vaadin-number-field-71"
+        >Fender Transport</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-227"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Fender Singulator"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(258px, 75.3333px);"
+        source-key="/SmartDashboard/Scoring Commands/Fender Singulator Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-72"
+            aria-labelledby="label-vaadin-number-field-313"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-313"
+            for="vaadin-number-field-72"
+        >Fender Singulator</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-237"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Fender Shooter"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(260px, 152.667px);"
+        source-key="/SmartDashboard/Scoring Commands/Fender Shooter Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-73"
+            aria-labelledby="label-vaadin-number-field-327"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-327"
+            for="vaadin-number-field-73"
+        >Fender Shooter</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-247"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Fender Angle"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(260px, 224px);"
+        source-key="/SmartDashboard/Scoring Commands/Fender Tilt Angle"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-74"
+            aria-labelledby="label-vaadin-number-field-341"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-341"
+            for="vaadin-number-field-74"
+        >Fender Angle</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-257"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Ranged Transport"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(388.667px, 0px);"
+        source-key="/SmartDashboard/Scoring Commands/Ranged Transport Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-75"
+            aria-labelledby="label-vaadin-number-field-355"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-355"
+            for="vaadin-number-field-75"
+        >Ranged Transport</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-267"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Ground Inner"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(0px, 444.667px);"
+        source-key="/SmartDashboard/PickupCommands/Ground Inner Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-76"
+            aria-labelledby="label-vaadin-number-field-369"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-369"
+            for="vaadin-number-field-76"
+        >Ground Inner</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-277"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Ranged Singulator"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(387.333px, 74.6667px);"
+        source-key="/SmartDashboard/Scoring Commands/Ranged Singulator Percent"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-77"
+            aria-labelledby="label-vaadin-number-field-982"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-982"
+            for="vaadin-number-field-77"
+        >Ranged Singulator</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-666"
+            hidden=""
+        ></div>
+    </vaadin-number-field><vaadin-number-field
+        label="Ranged Efficiency"
+        value="0"
+        has-value=""
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(389.333px, 152px);"
+        source-key="/SmartDashboard/Reset and Holding Commands/Shooting Efficiency"
+        min="NaN"
+        max="NaN"
+        placeholder=""
+    ><input
+            slot="input"
+            value="0"
+            type="number"
+            id="vaadin-number-field-78"
+            aria-labelledby="label-vaadin-number-field-1030"
+            aria-describedby=""
+            min="NaN"
+            max="NaN"
+            step="any"
+        ><label
+            slot="label"
+            id="label-vaadin-number-field-1030"
+            for="vaadin-number-field-78"
+        >Ranged Efficiency</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-number-field-698"
+            hidden=""
+        ></div>
+    </vaadin-number-field></dashboard-tab>

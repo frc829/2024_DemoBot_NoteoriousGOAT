@@ -1,0 +1,79 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.73,
+      "y": 4.54
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerBotStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BananaMan-3-C0_3C_8C-1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BananaMan-3-C0_3C_8C-2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BananaMan-3-C0_3C_8C-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BananaMan-3-C0_3C_8C-4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

@@ -1,0 +1,85 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.76,
+      "y": 6.51
+    },
+    "rotation": 60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "RearToField"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerTopStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BarbieGirl-3-A0_1A_4R-1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BarbieGirl-3-A0_1A_4R-2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BarbieGirl-3-A0_1A_4R-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BarbieGirl-3-A0_1A_4R-4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

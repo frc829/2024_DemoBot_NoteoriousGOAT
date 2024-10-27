@@ -1,0 +1,103 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.76,
+      "y": 4.49
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerBotStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R-1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R-2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R-3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R-4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R-5"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R-6"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R-7"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

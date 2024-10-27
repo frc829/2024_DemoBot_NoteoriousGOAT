@@ -1,0 +1,85 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.62,
+      "y": 4.36
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "RearToField"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerBotStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "WishYouWereHere-3-C0_8R_7R-1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "WishYouWereHere-3-C0_8R_7R-2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "WishYouWereHere-3-C0_8R_7R-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "WishYouWereHere-3-C0_8R_7R-4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "BackReset"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

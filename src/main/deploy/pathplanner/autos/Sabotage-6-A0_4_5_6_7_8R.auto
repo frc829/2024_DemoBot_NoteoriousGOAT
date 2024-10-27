@@ -1,0 +1,67 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.65,
+      "y": 6.63
+    },
+    "rotation": 60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerTopStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Sabotage-6-A0_4_5_6_7_8R-1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Pass"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Sabotage-6-A0_4_5_6_7_8R-2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Sabotage-6-A0_4_5_6_7_8R-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Sabotage-6-A0_4_5_6_7_8R-4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Sabotage-6-A0_4_5_6_7_8R-5"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

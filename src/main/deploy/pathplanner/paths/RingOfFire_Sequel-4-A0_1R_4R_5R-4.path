@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.89,
+        "y": 6.99
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.773704362223539,
+        "y": 7.133434209888363
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.880656456572507,
+        "y": 6.825618617377191
+      },
+      "prevControl": {
+        "x": 4.527172034028041,
+        "y": 7.0496436252466195
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0.1,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Pickup"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.25,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 180.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -2.8624052261118362,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "RingOfFire_Sequel-4-A0_1R_4R_5R",
+  "previewStartingState": {
+    "rotation": 29.98,
+    "velocity": 0.0
+  },
+  "useDefaultConstraints": true
+}

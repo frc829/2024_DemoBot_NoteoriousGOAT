@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.78,
+        "y": 1.51
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.860079073265534,
+        "y": 1.4925748719641432
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.145684485499897,
+        "y": 3.203880990154757
+      },
+      "prevControl": {
+        "x": 3.817874841846657,
+        "y": 1.0038721613290345
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Pickup"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.0,
+    "maxAcceleration": 6.0,
+    "maxAngularVelocity": 180.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -42.18000000000001,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "WishYouWereHere_Sequel-3-C0_8R_7R",
+  "previewStartingState": {
+    "rotation": -2.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

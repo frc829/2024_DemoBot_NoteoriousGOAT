@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.04,
+        "y": 3.3
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.429478573242861,
+        "y": -0.43978373671032994
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 8.279590915840975,
+        "y": 2.45
+      },
+      "prevControl": {
+        "x": 8.84898781084244,
+        "y": 2.7558309744159
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0.1,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Pickup"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.25,
+    "maxAcceleration": 5.0,
+    "maxAngularVelocity": 180.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 29.04249133682972,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "EleanorRigby-5-C0_3R_8R_7R_6R",
+  "previewStartingState": {
+    "rotation": -37.26999999999998,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

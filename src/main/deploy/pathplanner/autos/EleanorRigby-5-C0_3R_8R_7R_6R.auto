@@ -1,0 +1,97 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.76,
+      "y": 4.49
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpeakerBotStart"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Fender"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "EleanorRigby-5-C0_3R_8R_7R_6R-1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "EleanorRigby-5-C0_3R_8R_7R_6R-2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "EleanorRigby-5-C0_3R_8R_7R_6R-3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "EleanorRigby-5-C0_3R_8R_7R_6R-4"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "EleanorRigby-5-C0_3R_8R_7R_6R-5"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "EleanorRigby-5-C0_3R_8R_7R_6R-6"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "EleanorRigby-5-C0_3R_8R_7R_6R-7"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Ranged"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

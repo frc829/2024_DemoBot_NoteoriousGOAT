@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.28,
+        "y": 5.79
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.168800251821723,
+        "y": 6.56425610819619
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.413937690177864,
+        "y": 6.312227974343082
+      },
+      "prevControl": {
+        "x": 6.590068981492364,
+        "y": 6.573590483524083
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "New Event Marker",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Pickup"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.25,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 180.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 9.462322208025913,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "PeanutButterJellyTime-6-C0_3R_2R_1R_4R_5R",
+  "previewStartingState": {
+    "rotation": -26.569999999999993,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}
