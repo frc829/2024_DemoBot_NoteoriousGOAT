@@ -57,7 +57,7 @@ public class DriveSubsystem extends SubsystemBase {
                 private static final List<Double> wheelGearings = Collections.nCopies(4, -5.90);
                 private static final List<Measure<Distance>> wheelRadii = Collections.nCopies(4, Inches.of(2));
                 private static final List<Integer> angleSensorIds = Arrays.asList(30, 31, 32, 33);
-                private static final String canbus = "CANIVORE";
+                private static final String canbus = "rio";
                 private static final List<Double> steerkPs = Collections.nCopies(4, 2.0);
                 private static final List<Double> steerkIs = Collections.nCopies(4, 0.0);
                 private static final List<Double> steerkDs = Collections.nCopies(4, 0.0);

@@ -5,7 +5,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 import com.ctre.phoenix6.controls.NeutralOut;
-import com.ctre.phoenix6.controls.VelocityTorqueCurrentFOC;
+import com.ctre.phoenix6.controls.VelocityVoltage;
 import com.ctre.phoenix6.hardware.TalonFX;
 import com.ctre.phoenix6.sim.TalonFXSimState;
 import com.pathplanner.lib.auto.AutoBuilder.TriFunction;
@@ -227,25 +227,27 @@ public class Motor {
                         };
                         Consumer<Measure<Angle>> turn = (setpoint) -> {
                         };
-                        VelocityTorqueCurrentFOC velocityTorqueCurrentFOC = new VelocityTorqueCurrentFOC(
+                        VelocityVoltage velocityVoltage = new VelocityVoltage(
                                         0,
                                         0,
+                                        false,
                                         0,
                                         0,
                                         false,
                                         false,
                                         false);
+
                         Consumer<Measure<Velocity<Angle>>> spin = (setpoint) -> {
                                 if (setpoint.in(RotationsPerSecond) > 0) {
-                                        talonFX.setControl(velocityTorqueCurrentFOC
+                                        talonFX.setControl(velocityVoltage
                                                         .withVelocity(setpoint.in(RotationsPerSecond))
                                                         .withFeedForward(1));
                                 } else if (setpoint.in(RotationsPerSecond) < 0) {
-                                        talonFX.setControl(velocityTorqueCurrentFOC
+                                        talonFX.setControl(velocityVoltage
                                                         .withVelocity(setpoint.in(RotationsPerSecond))
                                                         .withFeedForward(-1));
                                 } else {
-                                        talonFX.setControl(velocityTorqueCurrentFOC
+                                        talonFX.setControl(velocityVoltage
                                                         .withVelocity(setpoint.in(RotationsPerSecond))
                                                         .withFeedForward(0));
                                 }
