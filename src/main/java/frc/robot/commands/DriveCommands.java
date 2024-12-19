@@ -3,13 +3,9 @@ package frc.robot.commands;
 import static edu.wpi.first.units.Units.MetersPerSecond;
 import static edu.wpi.first.units.Units.RadiansPerSecond;
 import static frc.robot.RobotContainer.driveSubsystem;
-import static frc.robot.RobotContainer.telemetrySubsystem;
-
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import com.pathplanner.lib.auto.AutoBuilder;
-import com.pathplanner.lib.path.PathConstraints;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.math.kinematics.SwerveModuleState;
@@ -162,18 +158,6 @@ public class DriveCommands {
                 return command;
         };
 
-        private static final class Constants {
-                private static final class NoteDetection {
-                        private static final PathConstraints pathConstraints = new PathConstraints(
-                                        DriveSubsystem.Constants.maxLinearVelocity.in(MetersPerSecond),
-                                        DriveSubsystem.Constants.maxLinearVelocity.in(MetersPerSecond),
-                                        DriveSubsystem.Constants.maxAngularVelocity.in(RadiansPerSecond),
-                                        DriveSubsystem.Constants.maxAngularVelocity.in(RadiansPerSecond));
-                        private static final double goalEndVelocityMPS = 0.0;
-                        private static final double rotationDelayDistance = 0.0;
-                }
-        }
-
         public static final Supplier<Command> createResetEncodersCommand = () -> {
                 Runnable reset = () -> RobotContainer.driveSubsystem.resetSteerEncodersFromAbsolutes.run();
 
@@ -195,86 +179,6 @@ public class DriveCommands {
                 Command command = Commands.run(zero, RobotContainer.driveSubsystem);
                 command.setName("Zero Modules");
                 return command;
-        };
-
-        public static final Supplier<Command> goToNoteCommandSupplier = () -> {
-                var pose = RobotContainer.telemetrySubsystem.objectPositions.get(0).getSecond().get();
-                if (pose.isPresent() && !Double.isNaN(pose.get().getX())) {
-                        Command pathCommand = AutoBuilder
-                                        .pathfindToPose(
-                                                        pose.get(),
-                                                        Constants.NoteDetection.pathConstraints,
-                                                        Constants.NoteDetection.goalEndVelocityMPS,
-                                                        Constants.NoteDetection.rotationDelayDistance);
-                        Command command = pathCommand.until(() -> pathCommand.isFinished());
-                        return command;
-                } else {
-                        Command pathCommand = AutoBuilder
-                                        .pathfindToPose(
-                                                        telemetrySubsystem.poseEstimate.get(),
-                                                        Constants.NoteDetection.pathConstraints,
-                                                        Constants.NoteDetection.goalEndVelocityMPS,
-                                                        Constants.NoteDetection.rotationDelayDistance);
-                        Command command = pathCommand.until(() -> pathCommand.isFinished());
-                        return command;
-                }
-        };
-
-        public static final Supplier<Command> goToNoteCommandSupplierAuto = () -> {
-                var pose = RobotContainer.telemetrySubsystem.objectPositions.get(0).getSecond().get();
-                if (pose.isPresent() && !Double.isNaN(pose.get().getX())) {
-                        if (DriverStation.getAlliance().isPresent()
-                                        && DriverStation.getAlliance().get() == Alliance.Red) {
-                                if (pose.get().getX() >= TelemetryCommands.Constants.fieldLengthMeters / 2 - 0.30) {
-                                        Command pathCommand = AutoBuilder
-                                                        .pathfindToPose(
-                                                                        pose.get(),
-                                                                        Constants.NoteDetection.pathConstraints,
-                                                                        Constants.NoteDetection.goalEndVelocityMPS,
-                                                                        Constants.NoteDetection.rotationDelayDistance);
-                                        Command command = pathCommand.until(() -> pathCommand.isFinished());
-                                        return command;
-                                } else {
-                                        Command pathCommand = AutoBuilder
-                                                        .pathfindToPose(
-                                                                        telemetrySubsystem.poseEstimate.get(),
-                                                                        Constants.NoteDetection.pathConstraints,
-                                                                        Constants.NoteDetection.goalEndVelocityMPS,
-                                                                        Constants.NoteDetection.rotationDelayDistance);
-                                        Command command = pathCommand.until(() -> pathCommand.isFinished());
-                                        return command;
-                                }
-                        } else {
-                                if (pose.get().getX() <= TelemetryCommands.Constants.fieldLengthMeters / 2 + 0.30) {
-                                        Command pathCommand = AutoBuilder
-                                                        .pathfindToPose(
-                                                                        pose.get(),
-                                                                        Constants.NoteDetection.pathConstraints,
-                                                                        Constants.NoteDetection.goalEndVelocityMPS,
-                                                                        Constants.NoteDetection.rotationDelayDistance);
-                                        Command command = pathCommand.until(() -> pathCommand.isFinished());
-                                        return command;
-                                } else {
-                                        Command pathCommand = AutoBuilder
-                                                        .pathfindToPose(
-                                                                        telemetrySubsystem.poseEstimate.get(),
-                                                                        Constants.NoteDetection.pathConstraints,
-                                                                        Constants.NoteDetection.goalEndVelocityMPS,
-                                                                        Constants.NoteDetection.rotationDelayDistance);
-                                        Command command = pathCommand.until(() -> pathCommand.isFinished());
-                                        return command;
-                                }
-                        }
-                } else {
-                        Command pathCommand = AutoBuilder
-                                        .pathfindToPose(
-                                                        telemetrySubsystem.poseEstimate.get(),
-                                                        Constants.NoteDetection.pathConstraints,
-                                                        Constants.NoteDetection.goalEndVelocityMPS,
-                                                        Constants.NoteDetection.rotationDelayDistance);
-                        Command command = pathCommand.until(() -> pathCommand.isFinished());
-                        return command;
-                }
         };
 
         public DriveCommands() {

@@ -241,11 +241,11 @@ public class Motor {
                                 if (setpoint.in(RotationsPerSecond) > 0) {
                                         talonFX.setControl(velocityVoltage
                                                         .withVelocity(setpoint.in(RotationsPerSecond))
-                                                        .withFeedForward(1));
+                                                        .withFeedForward(0));
                                 } else if (setpoint.in(RotationsPerSecond) < 0) {
                                         talonFX.setControl(velocityVoltage
                                                         .withVelocity(setpoint.in(RotationsPerSecond))
-                                                        .withFeedForward(-1));
+                                                        .withFeedForward(0));
                                 } else {
                                         talonFX.setControl(velocityVoltage
                                                         .withVelocity(setpoint.in(RotationsPerSecond))

@@ -4,8 +4,6 @@
 
 package frc.robot;
 
-import static frc.robot.RobotContainer.telemetrySubsystem;
-
 import com.revrobotics.REVPhysicsSim;
 
 import edu.wpi.first.net.PortForwarder;
@@ -89,8 +87,6 @@ public class Robot extends TimedRobot {
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
     }
-
-    telemetrySubsystem.enableFieldDetectors.get(1).run();
 
   }
 

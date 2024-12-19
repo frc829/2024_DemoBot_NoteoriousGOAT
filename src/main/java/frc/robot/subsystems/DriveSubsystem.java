@@ -37,6 +37,7 @@ import edu.wpi.first.math.kinematics.SwerveModulePosition;
 import edu.wpi.first.math.kinematics.SwerveModuleState;
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics.SwerveDriveWheelStates;
 import edu.wpi.first.math.system.plant.DCMotor;
+import edu.wpi.first.math.util.Units;
 import edu.wpi.first.units.Angle;
 import edu.wpi.first.units.Distance;
 import edu.wpi.first.units.Measure;
@@ -50,7 +51,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 public class DriveSubsystem extends SubsystemBase {
 
         public static final class Constants {
-                private static final DCMotor driveDCMotor = DCMotor.getKrakenX60Foc(1);
+                private static final DCMotor driveDCMotor = DCMotor.getKrakenX60(1);
                 private static final List<Integer> steerDeviceIds = Arrays.asList(10, 11, 12, 13);
                 private static final List<Double> steerGearings = Collections.nCopies(4, 150.0 / 7.0);
                 private static final List<Integer> wheelDeviceIds = Arrays.asList(20, 21, 22, 23);
@@ -62,10 +63,10 @@ public class DriveSubsystem extends SubsystemBase {
                 private static final List<Double> steerkIs = Collections.nCopies(4, 0.0);
                 private static final List<Double> steerkDs = Collections.nCopies(4, 0.0);
                 private static final List<Double> steerkFs = Collections.nCopies(4, 0.0);
-                private static final List<Double> wheelFOCkPs = Collections.nCopies(4, 10.951);
-                private static final List<Double> wheelFOCkIs = Collections.nCopies(4, 0.00);
-                private static final List<Double> wheelFOCkDs = Collections.nCopies(4, 0.000);
-                private static final List<Double> wheelFOCkFs = Collections.nCopies(4, 0.0);
+                private static final List<Double> wheelFOCkPs = Collections.nCopies(4, 0.0);
+                private static final List<Double> wheelFOCkIs = Collections.nCopies(4, 0.0);
+                private static final List<Double> wheelFOCkDs = Collections.nCopies(4, 0.0);
+                private static final List<Double> wheelFOCkFs = Collections.nCopies(4, 12 / Units.radiansToRotations(driveDCMotor.freeSpeedRadPerSec));
                 private static final Measure<Distance> moduleX = Inches.of(13);
                 private static final Measure<Distance> moduleY = Inches.of(13);
                 public static SwerveDriveKinematics kinematics = new SwerveDriveKinematics(
@@ -263,8 +264,10 @@ public class DriveSubsystem extends SubsystemBase {
                                         TalonFXConfiguration config = new TalonFXConfiguration();
                                         config.Voltage.PeakForwardVoltage = 12.0;
                                         config.Voltage.PeakReverseVoltage = -12.0;
-                                        config.TorqueCurrent.PeakForwardTorqueCurrent = 70;
-                                        config.TorqueCurrent.PeakReverseTorqueCurrent = -70;
+                                        config.TorqueCurrent.PeakForwardTorqueCurrent = 120;
+                                        config.TorqueCurrent.PeakReverseTorqueCurrent = -120;
+                                        config.CurrentLimits.StatorCurrentLimit = 120.0;
+                                        config.CurrentLimits.StatorCurrentLimitEnable = true;
                                         config.Slot0.kP = Constants.wheelFOCkPs.get(i);
                                         config.Slot0.kI = Constants.wheelFOCkIs.get(i);
                                         config.Slot0.kD = Constants.wheelFOCkDs.get(i);

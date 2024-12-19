@@ -38,11 +38,8 @@ import frc.robot.commands.ElevatorShoot;
 import frc.robot.commands.Fender;
 import frc.robot.commands.Ground;
 import frc.robot.commands.Level;
-import frc.robot.commands.MovingRangedShot;
 import frc.robot.commands.Pass;
-import frc.robot.commands.NoteDetect;
 import frc.robot.commands.SpinUp;
-import frc.robot.commands.StationaryRangedShot;
 import frc.robot.commands.TelemetryCommands;
 import frc.robot.subsystems.BottomShooterSubsystem;
 import frc.robot.subsystems.DriveSubsystem;
@@ -163,20 +160,16 @@ public class RobotContainer {
                 operator.padDown.onFalse(Level.command.get());
                 driver.leftBumper.whileTrue(Fender.create.get());
                 driver.leftBumper.onFalse(Level.command.get());
-                driver.rightBumper.whileTrue(StationaryRangedShot.Ranged.create.get());
                 driver.rightBumper.onFalse((Level.command.get()));
                 driver.back.whileTrue(DriveCommands.createZeroModulesCommand.get());
 
                 driver.start.onTrue(TelemetryCommands.createSetStartPoseCommand
                                 .apply(TelemetryCommands.Constants.testingStartPose));
                 // driver.start.onTrue(Commands.runOnce(driveSubsystem.resetSteerEncodersFromAbsolutes));
-                driver.x.whileTrue(NoteDetect.create.get());
-                driver.x.onFalse(TelemetryCommands.createSetFrontCameraToFieldCommand.get()
-                                .andThen(Level.command.get()));
+
 
                 driver.a.whileTrue(Amp.createAmpDrop.get());
                 driver.a.onFalse(Level.command.get());
-                driver.b.whileTrue(MovingRangedShot.Ranged.create.get());
                 driver.b.onFalse(Level.command.get());
                 driver.y.whileTrue(Pass.create.get());
                 driver.y.onFalse(Level.command.get());
@@ -217,12 +210,9 @@ public class RobotContainer {
 
                 PPHolonomicDriveController.setRotationTargetOverride(this::getRotationTargetOverride);
 
-                NamedCommands.registerCommand("BackReset",
-                                TelemetryCommands.createResetPoseFromBackCameraCommand.get());
-                NamedCommands.registerCommand("Fender", Fender.createWithDelay.get());
-                NamedCommands.registerCommand("Ranged", StationaryRangedShot.Ranged.createWithDelay.get());
-                NamedCommands.registerCommand("Pass", Pass.createWithDelay.get());
 
+                NamedCommands.registerCommand("Fender", Fender.createWithDelay.get());
+                NamedCommands.registerCommand("Pass", Pass.createWithDelay.get());
                 NamedCommands.registerCommand("Pickup", Ground.groundCommand.get());
                 NamedCommands.registerCommand("SpinUp", SpinUp.createSpinUp.get());
                 NamedCommands.registerCommand("GetLow", Level.command.get());
@@ -238,11 +228,7 @@ public class RobotContainer {
                 NamedCommands.registerCommand("AmpStart",
                                 TelemetryCommands.createSetStartPoseCommand
                                                 .apply(TelemetryCommands.Constants.AmpStart));
-                NamedCommands.registerCommand("RearToField",
-                                TelemetryCommands.createSetRearCameraToFieldCommand.get());
 
-                NamedCommands.registerCommand("GetNote",
-                                NoteDetect.createForAuto.get());
 
                 autoChooser = AutoBuilder.buildAutoChooser();
                 SmartDashboard.putData("Auto Chooser", autoChooser);
